@@ -4,13 +4,7 @@ Piximago is an image processing application which offers the user a fairly simpl
 
 ## 1 - Demonstration
 
-<figure>
-    <video width="640" height="360" controls>
-        <source src="readme/Demo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <figcaption><b>Demonstration of the software</b></figcaption>
-</figure>
+https://github.com/gdubrasquetd/Piximago/assets/58482474/1689eff9-7928-483f-af44-2e89d10a31de
 
 ## 2 - Installation 
 
@@ -56,11 +50,11 @@ First of all, there is a menu bar in two menus. The first one, "File", contains 
 Warning : only some formats are accepted by the software : png, jpg, jpeg. 
 
 
-
 <figure id="fig1">
     <img src="readme/Software.png" />
   <figcaption><b>Software with an opened image</b></figcaption>
 </figure>
+<br/>
 
 When you open an image, its representation is displayed twice on the right-hand side of the interface : original image (<a style="color: red;" href="#fig1">1</a>) to the top and a preview (<a style="color: red;" href="#fig1">2</a>) of the result image below. This preview  apply the modifications in real time according to the values selected by the user.
 
@@ -77,20 +71,16 @@ This method allows to adjust the colorimetry of the image by modifying the amoun
 
 ##### Parameters :
 
-<div style="display: flex; align-items: center;">
-    <div style="flex: 0.7;">
-        <figure>
-            <img src="readme/Colorimetry.png" />
-        </figure>
-    </div>
-    <div style="flex: 1; padding-top: 90px;">
-        <ul>
-            <li style="padding-bottom: 30px;">Red values of the image are multiplied by a factor from 0% to 200%</li>
-            <li style="padding-bottom: 30px;">Green values of the image are multiplied by a factor from 0% to 200%</li>
-            <li style="padding-bottom: 30px;">Blue values of the image are multiplied by a factor from 0% to 200%</li>
-        </ul>
-    </div>
-</div>
+<figure>
+    <img align="left" src="readme/Colorimetry.png" />
+</figure>
+<br/><br/><br/><br/><br/><br/>
+- Red values of the image are multiplied by a factor from 0% to 200%
+<br/><br/><br/><br/>
+- Green values of the image are multiplied by a factor from 0% to 200%
+<br/><br/><br/><br/>
+- Blue values of the image are multiplied by a factor from 0% to 200%
+<br/><br/><br/><br/><br/><br/>
 
 #### Balance
 
@@ -101,20 +91,16 @@ $R[i] =(R[i]−\dfrac{R[i]+G[i]+B[i]}{3})×factor+\dfrac{R[i]+G[i]+B[i]}{3}$
 
 ##### Parameters :
 
+<figure>
+    <img align="left" src="readme/Balance.png" />
+</figure>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+- Contrast of the image from 0% to 1000%
+<br/><br/><br/><br/>
+- Brightness of the image is modified by adding from -255 to 255 to all values of each color channel
+<br/><br/><br/><br/><br/>
 
-<div style="display: flex; align-items: center;">
-    <div style="flex: 0.7;">
-        <figure>
-            <img src="readme/Balance.png" />
-        </figure>
-    </div>
-    <div style="flex: 1; padding-top: 100px;" >
-        <ul>
-            <li style="padding-bottom: 60px;">Contrast of the image from 0% to 1000%</li>
-            <li style="padding-bottom: 0px;">Brightness of the image is modified by adding from -255 to 255 to all values of each color channel</li>
-        </ul>
-    </div>
-</div>
+<br/><br/>
 
 #### Convolution
 
@@ -126,20 +112,14 @@ This method applies convolution effects to the image. To do that the function ad
 
 ##### Parameters :
 
-<div style="display: flex; align-items: center;">
-    <div style="flex: 0.7;">
-        <figure style="margin-right: 1px;">
-            <img src="readme/Convolution.png" />
-        </figure>
-    </div>
-    <div style="flex: 1.3;">
-        <figure>
-            <img src="readme/Matrix.png" />
-        </figure>
-    </div>
-</div>
-
-
+<figure>
+    <img align="left" width="250"  src="readme/Convolution.png" />
+</figure>
+<br/><br/>
+<figure>
+    <img align="center" width="500" src="readme/Matrix.png" />
+</figure>
+<br/><br/>
 
 #### Cross
 
@@ -151,21 +131,19 @@ This method is cleaning some frequential noises. By using a Fourier transform, t
 
 ##### Parameters :
 
-<div style="display: flex; align-items: center;">
-    <div style="flex: 0.7;">
-        <figure>
-            <img src="readme/Cross.png" />
-        </figure>
-    </div>
-    <div style="flex: 1; padding-top: 100px;">
-        <ul>
-            <li style="padding-bottom: 30px;">Thickness of the lines</li>
-            <li style="padding-bottom: 30px;">Void space left in the middle of the lines</li>
-            <li style="padding-bottom: 30px;">Crossing lines, vertical line or horizontal line </li>
-            <li style="padding-bottom: 30px;">Position of the line in percent of the image's width or height</li>
-        </ul>
-    </div>
-</div>
+<figure>
+    <img align="left" width="250"  src="readme/Cross.png" />
+</figure>
+<br/><br/><br/><br/><br/>
+-Thickness of the lines
+<br/><br/><br/>
+-Void space left in the middle of the lines
+<br/><br/><br/><br/>
+-Crossing lines, vertical line or horizontal line
+<br/><br/><br/><br/>
+-Position of the line in percent of the image's width or height
+<br/><br/><br/><br/>
+<br/>
 
 #### Band
 
@@ -177,20 +155,17 @@ This method is cleaning some frequential noises. By using a Fourier transform, t
 
 ##### Parameters :
 
-<div style="display: flex; align-items: center;">
-    <div style="flex: 0.7;">
-        <figure>
-            <img src="readme/Band.png" />
-        </figure>
-    </div>
-    <div style="flex: 1; padding-top: 80px;">
-        <ul>
-            <li style="padding-bottom: 30px;">Min value of the band in percent of the normalized dimensions of the image</li>
-            <li style="padding-bottom: 30px;">Max value of the band in percent of the normalized dimensions of the image</li>
-            <li style="padding-bottom: 30px;">Exclude values out of the band or include values out the band</li>
-        </ul>
-    </div>
-</div>
+<figure>
+    <img align="left" width="250"  src="readme/Band.png" />
+</figure>
+<br/><br/><br/><br/><br/>
+-Min value of the band in percent of the normalized dimensions of the image
+<br/><br/><br/><br/>
+-Max value of the band in percent of the normalized dimensions of the image
+<br/><br/><br/><br/><br/>
+-Exclude values out of the band or include values out the band
+<br/><br/><br/><br/><br/><br/>
+<br/>
 
 #### Stain
 
@@ -200,21 +175,22 @@ This method is cleaning some frequential noises in an image. By using a Fourier 
     <img src="readme/Stain.gif" />
 </figure>
 
-<div style="display: flex; align-items: center;">
-    <div style="flex: 0.7;">
-        <figure>
-            <img src="readme/Stain.png" />
-        </figure>
-    </div>
-    <div style="flex: 1; padding-top: 75px;">
-        <ul>
-            <li style="padding-bottom: 30px;">Treshold on Red channel based on a percent of the cumulative histogram</li>
-            <li style="padding-bottom: 30px;">Treshold on Red channel based on a percent of the cumulative histogram</li>
-            <li style="padding-bottom: 30px;">Treshold on Red channel based on a percent of the cumulative histogram</li>
-            <li style="padding-bottom: 30px;">Radius use for the dilatation and the erosion</li>
-        </ul>
-    </div>
-</div>
+##### Parameters :
+
+<figure>
+    <img align="left" width="250"  src="readme/Stain.png" />
+</figure>
+
+<br/><br/><br/><br/>
+-Treshold on Red channel based on a percent of the cumulative histogram
+<br/><br/><br/><br/>
+-Treshold on Red channel based on a percent of the cumulative histogram
+<br/><br/><br/><br/>
+-Treshold on Red channel based on a percent of the cumulative histogram
+<br/><br/><br/><br/>
+-Radius use for the dilatation and the erosion
+<br/><br/><br/><br/><br/>
+
 
 #### Resize
 
